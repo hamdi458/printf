@@ -8,8 +8,18 @@
  */
 int i_int(va_list c)
 {
-  _putchar(va_arg(c,int));
-  return(0);
+
+char *str = va_arg(c, char *);
+int i = 0, s = 0;
+if (str == NULL)
+return (-1);
+while (str[i])
+{
+_putchar (str[i]);
+s++;
+i++;
+}
+return (s);
 }
 
 
