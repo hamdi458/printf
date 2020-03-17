@@ -21,11 +21,10 @@ i++;
 }while (n != 0);
 
 j = i - 1;
-while (j >= 0)
+for (j = i - 1; j >= 0; j--)
 {
 _putchar(l[j] + '0');
 s++;
-j--;
 }
 return (s);
 }
