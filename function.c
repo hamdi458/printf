@@ -18,13 +18,14 @@ r = n % 2;
 l[i] = r;
 n = (n - r) / 2;
 i++;
-}
-while (n != 0);
+}while (n != 0);
 
-for (j = i - 1; l[j]; j--)
+j = i - 1;
+while (j >= 0)
 {
 _putchar(l[j] + '0');
 s++;
+j--;
 }
 return (s);
 }
