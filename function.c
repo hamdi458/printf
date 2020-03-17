@@ -8,7 +8,7 @@
  */
 int c_char(va_list c)
 {
-_putchar(va_arg(c, int);
+_putchar(va_arg(c, int));
 return (1);
 }
 /**
@@ -22,7 +22,7 @@ char *ch;
 int i;
 i = 0;
 ch = va_arg(c, char*);
-if (ch == NULL);
+if (ch == NULL)
 {
 ch = "(null)";
 }
