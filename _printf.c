@@ -9,7 +9,7 @@
 int _printf(const char *format, ...)
 {
 
-  int s, i;
+int s, i;
 va_list ap;
 va_start(ap, format);
 if (format == NULL)
@@ -18,11 +18,11 @@ i = 0;
 s = 0;
 while(format[i])
 {
-  if (get_op_func(format[i] != NULL)
-    {    
-  s = s + get_op_func(ap)
-i= i+ 2
-    }
+  if (get_op_func(format[i]) != NULL)
+{    
+s = s + get_op_func(ap)
+i = i+ 1
+}
 else
 if(format[i + 1] == '\0')
 return (-1);
