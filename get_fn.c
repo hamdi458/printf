@@ -15,6 +15,7 @@ op_t ops[] = {
 {"i", i_int},
 {"d", i_int},
 {"b", b_bin},
+{"r", r_rev},
 {NULL, NULL}
 };
 k = 0;

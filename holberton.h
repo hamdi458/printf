@@ -1,4 +1,4 @@
-#ifndef HOLBERTON_H
+B#ifndef HOLBERTON_H
 #define HOLBERTON_H
 #include <stdarg.h>
 #include <stdlib.h>
@@ -16,6 +16,7 @@ int (*f)(va_list p);
 void print_number(int n);
 int _putchar(char c);
 int b_bin(va_list c);
+int r_rev(va_list c);
 int c_char(va_list c);
 int s_string(va_list c);
 int _printf(const char *format, ...);
