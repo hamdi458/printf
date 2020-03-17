@@ -8,10 +8,9 @@
  */
 int b_bin(va_list c)
 {
-int i, j, n, r;
-int l[32];
+unsigned int i, j, n, r, l[32];
 int s = 0;
-n = va_arg(c, int);
+n = va_arg(c, unsigned int);
 for (i = 0; n != 0; i++)
 { 
 r = n % 2;
