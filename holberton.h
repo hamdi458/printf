@@ -21,6 +21,7 @@ int r_rev(va_list c);
 int c_char(va_list c);
 int s_string(va_list c);
 int _printf(const char *format, ...);
+int o_oct(va_list c);
 int (*get_op_func(const char *format))(va_list);
 int i_int(va_list c);
 #endif

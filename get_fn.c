@@ -17,6 +17,7 @@ op_t ops[] = {
 {"b", b_bin},
 {"r", r_rev},
 {"R", R_rot},
+{"o", o_oct},
 {NULL, NULL}
 };
 k = 0;
