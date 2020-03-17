@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdarg.h>
 #include <stdio.h>
  /**
   * get_op_func - fun int
