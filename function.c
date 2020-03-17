@@ -4,7 +4,7 @@
 /**
  * b_bin - fun
  * @c: c
- * Return: binary
+ * Return: binary.
  */
 int b_bin(va_list c)
 {
