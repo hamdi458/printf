@@ -9,8 +9,7 @@
 int _printf(const char *format, ...)
 {
 
-  int s, i, f;
-int (*f1)(va_list, char);
+  int s, i;
 va_list ap;
 
 
