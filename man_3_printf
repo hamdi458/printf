@@ -18,8 +18,7 @@ _printf() function is used to print the “character, string, float, integer, oc
 .B %d, %i : Prints Integer signed decimal conversion.
 .B %s : Prints Text string (finished with '\0').
 .SH SEE ALSO
-printf(1), asprintf(3), dprintf(3), scanf(3), setlocale(3), wcrtomb(3), wprintf(3)\
-, locale(5)
+printf(1), asprintf(3), dprintf(3), scanf(3), setlocale(3), wcrtomb(3), wprintf(3)\,locale(5)
 .SH BUGS
 No known bugs.
 .SH AUTHOR
