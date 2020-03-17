@@ -34,8 +34,8 @@ s += f(ap);
 i += 1;
 }
 else
-if(format[i + 1] == '\0')
-return(-1);
+if (format[i + 1] == '\0')
+return (-1);
 if (format[i + 1] == '%')
 {
 _putchar('%');
