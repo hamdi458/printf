@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
+
 /**
    * c_char - fn
    * @args: var
