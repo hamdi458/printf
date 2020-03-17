@@ -11,24 +11,22 @@ int _printf(const char *format, ...)
 
   int s, i;
 va_list ap;
-
-
 va_start(ap, format);
 if (format == NULL)
 return (-1);
 i = 0;
+s = 0;
 while(format[i])
 {
-  if (get_op_func(format[i])
+  if (get_op_func(format[i] != NULL)
     {    
-  s += get_op_func(ap)
-i+=2
+  s = s + get_op_func(ap)
+i= i+ 2
     }
-    else
-      if(format[i + 1] == '\0')
-	return (-1);
- 
+else
+if(format[i + 1] == '\0')
+return (-1);
 }
 va_end(ap);
-return i;
+return (s);
 }
