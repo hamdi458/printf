@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdio.h>
+#include <stdlib.h>
 #include <stdarg.h> 
    /**
    * _printf - fun printf
@@ -11,19 +11,17 @@ int _printf(const char *format, ...)
 
 int s, i;
 va_list ap;
+ int (*f)(va_list);
 va_start(ap, format);
 if (format == NULL)
 return (-1);
 i = 0;
 s = 0;
 while(format[i])
-{
-  if (get_op_func(format[i]) != NULL)
 {    
-s = s + get_op_func(ap)
-i = i+ 1
-}
-else
+f = get_op_func(&format[i]);
+ s = s + f(ap);
+ i = i+ 1;
 if(format[i + 1] == '\0')
 return (-1);
 }
