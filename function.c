@@ -8,24 +8,11 @@
  */
 int i_int(va_list c)
 {
-int n,s;
-unsigned int num;
-n = va_arg(c, int);
-num = n;
-s = 0;
-if (n < 0)
-{
-_putchar('-');
-num = -num;
+  _putchar(va_arg(c,int));
+  return(0);
 }
-if ((num / 10) > 0)
-{
-print_number(num / 10);
-s++;
-}
-_putchar((num % 10) + '0');
-return (s);
-}
+
+
 /**
  * c_char - fn
  * @c: var

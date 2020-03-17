@@ -8,18 +8,20 @@
  */
 int (*get_op_func(const char *c))(va_list ap)
 {
-int i;
+int k;
 op_t ops[] = {
 {"c", c_char},
 {"s", s_string},
+{"i", i_int},
+{"d", i_int},
 {NULL, NULL}
 };
-i = 0;
-while (i <= 2)
+k = 0;
+while (k <= 4)
 {
-if (*c == *(ops + i)->op)
-return ((ops + i)->f);
-i++;
+if (*c == *(ops + k)->op)
+return ((ops + k)->f);
+k++;
 }
 return (NULL);
 }
