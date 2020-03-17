@@ -14,10 +14,11 @@ op_t ops[] = {
 {"s", s_string},
 {"i", i_int},
 {"d", i_int},
+{"b", b_bin},
 {NULL, NULL}
 };
 k = 0;
-while (k <= 4)
+while (k <= 5)
 {
 if (*c == *(ops + k)->op)
 return ((ops + k)->f);
