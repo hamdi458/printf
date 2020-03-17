@@ -8,32 +8,28 @@
  */
 int i_int(va_list c)
 {
-int v, j, k, i, n, s, n1;
+int n, k, nb = 1, s;
 n = va_arg(c, int);
 s = 0;
-i = 0;
-k = 1;
 if (n < 0)
 {
 _putchar('-');
 s++;
-n = n * (-1);
+n *= -1;
 }
-n1 = n;
-if(n > 0)
-for(;n > 0;i++)
+k = n;
+while (k / 10 != 0)
 {
-n = n / 10;
-k = k * 10;
+k /= 10;
+nb *= 10;
 }
-for (j = 0; j < i; j++)
+while (nb > 0)
 {
-v = n1 / k;
-_putchar(v + '0');
+_putchar((n / nb) + '0');
 s++;
-n1 = n1 % k;
-k = k / 10;
-}  
+n = n % nb;
+nb = nb / 10;
+}
 return (s);
 }
 
