@@ -16,10 +16,11 @@ op_t ops[] = {
 {"d", i_int},
 {"b", b_bin},
 {"r", r_rev},
+{"R", R_rot},
 {NULL, NULL}
 };
 k = 0;
-while (k <= 5)
+while (k <= 7)
 {
 if (*c == *(ops + k)->op)
 return ((ops + k)->f);

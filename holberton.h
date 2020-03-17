@@ -15,6 +15,7 @@ int (*f)(va_list p);
 } op_t;
 void print_number(int n);
 int _putchar(char c);
+int R_rot(va_list c);
 int b_bin(va_list c);
 int r_rev(va_list c);
 int c_char(va_list c);
