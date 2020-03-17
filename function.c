@@ -8,7 +8,9 @@
  */
 int c_char(va_list c)
 {
-_putchar(va_arg(c, int));
+char ch;
+ch = va_arg(c, int);
+ _putchar(ch);
 return (1);
 }
 /**
@@ -20,8 +22,13 @@ int s_string(va_list c)
 {
 char *ch;
 int i;
+i = 0;
 ch = va_arg(c, char*);
-for (i = 0; ch[i] != '\0'; i++)
+while(ch[i])
+{
 _putchar(ch[i]);
+i++;
+}
 return (i);
+
 }
