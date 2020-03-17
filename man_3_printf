@@ -1,7 +1,7 @@
 .TH man 2 "17 March 2020" "0.32" "_printf Holberton man page"
 .SH NAME
 .B _printf
-- Formatted outsput convrsion
+- Formatted output convrsion
 .SH SYNOPSIS
 .B #include <stdio.h>
 - int _prinf(const char *format, ...);
