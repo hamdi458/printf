@@ -8,18 +8,27 @@
  */
 int i_int(va_list c)
 {
-
-char *str = va_arg(c, char *);
-int i = 0, s = 0;
-if (str == NULL)
-return (-1);
-while (str[i])
-{
-_putchar (str[i]);
-s++;
-i++;
-}
-return (s);
+  int i,n,s;
+n = va_arg(c, int);
+ s = 0;
+ i=0;
+ if(n < 0)
+   {
+     s++;
+   n = n * (-1);
+   }
+ if(n > 9)
+ for(;n > 9;i++)
+   {
+     n = n / 10;
+     s++;
+   }
+   else
+   {
+   s++;
+   }
+ print_number(n);
+ return (s);
 }
 
 

@@ -13,6 +13,7 @@ typedef struct op
 char *op;
 int (*f)(va_list p);
 } op_t;
+void print_number(int n);
 int _putchar(char c);
 int c_char(va_list c);
 int s_string(va_list c);
