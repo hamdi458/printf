@@ -31,19 +31,18 @@ f = get_op_func(&format[i + 1]);
 if (f)
 {
 s += f(ap);
-i += 2;
+i += 1;
 }
 else
+if(format[i + 1] == '\0')
+return(-1);
 if (format[i + 1] == '%')
 {
 _putchar('%');
-i += 2;
+i += 1;
 s++;
 }
-else
 i++;
-if (format[i] == '\0')
-return (-1);
 }
 }
 va_end(ap);
