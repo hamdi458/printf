@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
+<<<<<<< HEAD
 /**
  * b_bin - fun
  * @c: c
@@ -19,16 +20,9 @@ l[i] = r;
 n = (n - r) / 2;
 i++;
 }while (n != 0);
+=======
+>>>>>>> 3698f21a6a196ebbde03ef88862e61e9860cf714
 
-j = i - 1;
-while (j >= 0)
-{
-_putchar(l[j] + '0');
-s++;
-j--;
-}
-return (s);
-}
 
 /**
  * i_int - fn print integer d_or_i
