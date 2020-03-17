@@ -4,7 +4,7 @@
 /**
  * _printf - fun printf
  * @format: var format
- * Return: sum of char
+ * Return: sum of char.
  */
 int _printf(const char *format, ...)
 {

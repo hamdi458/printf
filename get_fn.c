@@ -4,7 +4,7 @@
 /**
  * get_op_func - fun int
  * @c: var op
- * Return: 0
+ * Return: zero
  */
 int (*get_op_func(const char *c))(va_list ap)
 {
