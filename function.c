@@ -2,6 +2,31 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
+ * i_int - fn print integer d_or_i
+ *@c : var
+ *Return : Always 0
+ */
+int i_int(va_list c)
+{
+int n,s;
+unsigned int num;
+n = va_arg(c, int);
+num = n;
+s = 0;
+if (n < 0)
+{
+_putchar('-');
+num = -num;
+}
+if ((num / 10) > 0)
+{
+print_number(num / 10);
+s++;
+}
+_putchar((num % 10) + '0');
+return (s);
+}
+/**
  * c_char - fn
  * @c: var
  * Return: 0
