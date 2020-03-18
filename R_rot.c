@@ -4,7 +4,7 @@
  * R_rot - fun
  * @c: var
  *
- * Return:0
+ * Return:00
  */
 int R_rot(va_list c)
 {
