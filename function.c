@@ -1,27 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
-<<<<<<< HEAD
-/**
- * b_bin - fun
- * @c: c
- * Return: binary.
- */
-int b_bin(va_list c)
-{
-int i, j, n, r, l[32];
-int s = 0;
-i = 0;
-n = va_arg(c, unsigned int);
-do
-{
-r = n % 2;
-l[i] = r;
-n = (n - r) / 2;
-i++;
-}while (n != 0);
-=======
->>>>>>> 3698f21a6a196ebbde03ef88862e61e9860cf714
 
 
 /**
