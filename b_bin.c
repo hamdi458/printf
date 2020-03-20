@@ -1,31 +1,30 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "holberton.h"
+#include <stdio.h>
 /**
  * b_bin - fun
- * @c: c
+ * @b: c
  * Return: binary
  */
 int b_bin(va_list c)
 {
-	int i, j, n, r, l[32];
-	int s = 0;
-
-i = 0;
-	n = va_arg(c, unsigned int);
-	do {
-		r = n % 2;
-		l[i] = r;
-		n = (n - r) / 2;
-		i++;
-	} while (n != 0);
-
-	j = i - 1;
-	while (j >= 0)
-	{
-		_putchar(l[j] + '0');
-		s++;
-		j--;
-	}
-	return (s);
+unsigned int n, m, i, j;
+unsigned int s = 0, l[32], tot = 0;
+n = va_arg(c, unsigned int);
+m = 2147483648;
+l[0] = n / m;
+for (i = 1; i < 32; i++)
+{
+m /= 2;
+l[i] = (n / m) % 2;
+}
+for (j = 0; j < 32; j++)
+{
+tot += l[j];
+if (tot || j == 31)
+{
+_putchar(l[j] + '0');
+s++;
+}
+}
+return (s);
 }
