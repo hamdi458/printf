@@ -2,13 +2,15 @@
 #include <stdio.h>
 /**
  * r_rev - fun
- * @r: var
- * Return: 00
+ *@c: var
+ * Return: 0
  */
+
 int r_rev(va_list c)
 {
 	char *ch;
-	int i = 0, j, s,x;
+	int i = 0, j, s, x;
+
 	s = 0;
 	x = 0;
 	ch = va_arg(c, char *);

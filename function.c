@@ -4,9 +4,9 @@
 
 
 /**
- * i_int - fn print integer d_or_i
+ *i_int - fn print integer d_or_i
  *@c : var
- *Return : Always 0
+ * Return: Always 0.
  */
 int i_int(va_list c)
 {
@@ -27,7 +27,7 @@ nb *= 10;
 }
 while (nb > 0)
 {
-_putchar((n / nb) + '0');
+_putchar((n / nb) +'0');
 s++;
 n = n % nb;
 nb = nb / 10;
