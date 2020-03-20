@@ -16,7 +16,7 @@ n = va_arg(c, unsigned int);
 k = n;
 while ((k / 10) != 0)
 {
-k /= 10
+k /= 10;
 n *= 10;
 }
 while (n1 >= 1)

@@ -19,8 +19,6 @@ int (*get_op_func(const char *c))(va_list ap)
 		{"R", R_rot},
 		{"o", o_oct},
 		{"u", u_uu},
-		{"x", x_xx},
-		{"X", X_XX},
 		{NULL, NULL}
 	};
 	k = 0;
