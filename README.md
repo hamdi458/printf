@@ -1,1 +1,1 @@
-Hello _printf.
+Hello _printf
