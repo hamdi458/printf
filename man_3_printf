@@ -12,7 +12,7 @@
 - int _putchar(char c);
 - int (*get_func(const char *format))(va_list);
 .SH DESCRIPTION
-_printf() function is used to print the “character, string, float, integer, octal \and hexadecimal values” onto the output screen.
+_printf() function is used to prinnt the “character, string, float, integer, octal \and hexadecimal values” onto the output screen.
 .SH OPTIONS
 .B %c : Prints the ASCII character passed as parameter.
 .B %d, %i : Prints Integer signed decimal conversion
